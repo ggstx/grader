@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"math"
 	"math/rand"
-	"time"
 )
 
 func main() {
@@ -60,7 +59,6 @@ type Student struct {
 }
 
 func getScore() float64 {
-	time.Now().UnixNano()
 	score := 30 + rand.Float64()*50   // 30 ≤ value < 80
 	score = math.Round(score*10) / 10 // 1 decimal place
 	return score
